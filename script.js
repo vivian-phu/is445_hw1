@@ -1,3 +1,4 @@
+// list with all the pictures
 const pics = [
     'kitty_bed.JPG',
     'kitty_basket.JPG',
@@ -10,8 +11,10 @@ const pics = [
 const button = document.querySelector('button')
 const img = document.querySelector('img')
 
+//counter to know when to cycle the photos
 let counter = 0
 
+//button directions
 button.addEventListener('click', function(){
     if (counter === pics.length){
         counter = 0
